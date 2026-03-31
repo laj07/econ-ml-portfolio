@@ -1,15 +1,10 @@
 # Economics × Machine Learning Portfolio
 
 <p align="center">
-  <img src="images/banner.svg" alt="Economics ML Portfolio" width="100%"/>
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/python-3.11+-FFD43B?logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/PyTorch-2.x-EE4C2C?logo=pytorch&logoColor=white"/>
   <img src="https://img.shields.io/badge/maintenance-actively%20developed-brightgreen"/>
   <img src="https://img.shields.io/badge/CI-passing-brightgreen?logo=github-actions"/>
-  <img src="https://img.shields.io/badge/license-MIT%20%2F%20Apache%202.0-blue"/>
 </p>
 
 <p align="center">

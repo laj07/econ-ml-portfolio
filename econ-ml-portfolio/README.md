@@ -152,9 +152,7 @@ econ-ml-portfolio/
 ├── pyproject.toml
 ├── requirements.txt
 ├── .gitignore
-├── .dockerignore
-├── LICENSE-MIT
-└── LICENSE-Apache
+└── .dockerignore
 ```
 
 ---

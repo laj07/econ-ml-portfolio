@@ -189,8 +189,3 @@ econ-ml-portfolio/
 
 Issues and pull requests are welcome. If you use any of these experiments in research, a citation or acknowledgement is appreciated but not required.
 
----
-
-## Licence
-
-All code is dual-licensed under [MIT](LICENSE-MIT) / [Apache 2.0](LICENSE-Apache). Data licences are listed in the datasets table above and in each experiment README.

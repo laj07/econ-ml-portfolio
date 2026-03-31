@@ -1,16 +1,5 @@
 # Economics ML Portfolio
 
-<p align="center">
-  <img src="images/banner.svg" alt="Economics ML Portfolio" width="100%"/>
-</p>
-
-<p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/maintenance-actively%20developed-brightgreen"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/python-3.11+-FFD43B?logo=python&logoColor=white"/></a>
-  <a href="LICENSE-MIT"><img src="https://img.shields.io/badge/license-MIT%20%2F%20Apache%202.0-blue"/></a>
-  <a href=".github/workflows/ci.yml"><img src="https://img.shields.io/badge/CI-passing-brightgreen?logo=github-actions"/></a>
-</p>
-
 **Machine learning applied to development economics, macroeconomics, and labour markets.**
 
 This portfolio applies deep learning to problems that matter to economists and policy makers but are underserved by open-source tooling: decoding central bank communication, measuring the informal economy from space, nowcasting GDP in data-scarce environments, and mapping the structure of international trade.

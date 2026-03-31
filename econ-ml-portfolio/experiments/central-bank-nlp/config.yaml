@@ -1,0 +1,26 @@
+name: central-bank-nlp
+experiment_type: central_bank_nlp
+
+data:
+  fomc_dir: data/fomc
+
+exp_params:
+  model_name: ProsusAI/finbert
+  freeze_base: false
+  dropout: 0.1
+  lr: 2.0e-5
+  weight_decay: 1.0e-4
+  batch_size: 32
+  max_length: 256
+  max_epochs: 5
+  seed: 42
+  sources:
+    - fomc
+    - ecb
+    - boe
+
+checkpoint: checkpoints/central_bank_nlp_best.ckpt
+
+figures:
+  confusion_matrix: output/central_bank_nlp_cm.png
+  sentiment_index:  output/central_bank_nlp_sentiment.png

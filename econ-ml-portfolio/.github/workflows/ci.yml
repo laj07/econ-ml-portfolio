@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install ruff black
+      - run: ruff check src/ scripts/ tests/
+      - run: black --check src/ scripts/ tests/
+
+  smoke-test:
+    name: Smoke tests (CPU, synthetic data)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install core deps
+        run: |
+          pip install --upgrade pip
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install numpy pandas scikit-learn scipy pyyaml pytest transformers \
+                      sentence-transformers networkx tqdm rich
+      - name: Run smoke tests
+        run: pytest tests/ -v --tb=short

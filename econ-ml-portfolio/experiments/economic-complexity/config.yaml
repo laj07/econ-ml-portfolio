@@ -1,0 +1,19 @@
+name: economic-complexity
+experiment_type: economic_complexity
+
+data:
+  oec_dir: data/oec
+
+exp_params:
+  oec_year: 2019
+  min_rca: 1.0
+  hidden_channels: 128
+  out_channels: 64
+  num_layers: 3
+  dropout: 0.2
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  max_epochs: 100
+  seed: 42
+
+checkpoint: checkpoints/economic_complexity_best.ckpt

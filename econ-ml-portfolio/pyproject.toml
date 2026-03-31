@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "econ-ml-portfolio"
+version = "0.1.0"
+description = "ML applications for development economics and macroeconomics"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT OR Apache-2.0"}
+
+[tool.black]
+line-length = 100
+target-version = ["py310", "py311"]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "--tb=short -q"

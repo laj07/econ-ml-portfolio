@@ -1,0 +1,7 @@
+include: config.yaml
+name: informal-economy-smoke
+exp_params:
+  max_epochs: 2
+  smoke: true
+  pretrained: false
+  batch_size: 4

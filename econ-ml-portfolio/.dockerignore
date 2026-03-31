@@ -1,0 +1,16 @@
+data/
+checkpoints/
+lightning_logs/
+.git/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.log
+wandb/
+runs/
+output/
+results/
+*.ipynb
+.ipynb_checkpoints/

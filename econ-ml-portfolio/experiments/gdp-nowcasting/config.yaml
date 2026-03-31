@@ -1,0 +1,33 @@
+name: gdp-nowcasting
+experiment_type: gdp_nowcasting
+
+data:
+  wdi_dir: data/wdi
+
+exp_params:
+  model: lstm          # "lstm" | "tft"
+  hidden_size: 128
+  num_layers: 2
+  dropout: 0.2
+  lr: 1.0e-3
+  batch_size: 64
+  max_epochs: 50
+  seq_len: 8           # months of alt-data history per sample
+  seed: 42
+  countries:
+    - IND
+    - BRA
+    - ZAF
+    - IDN
+    - NGA
+    - KEN
+    - BGD
+    - PAK
+    - VNM
+    - ETH
+    - PHL
+    - MEX
+    - TUR
+    - EGY
+
+checkpoint: checkpoints/gdp_nowcast_best.ckpt

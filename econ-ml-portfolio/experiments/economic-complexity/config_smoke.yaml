@@ -1,0 +1,5 @@
+include: config.yaml
+name: economic-complexity-smoke
+exp_params:
+  max_epochs: 2
+  smoke: true

@@ -1,0 +1,17 @@
+name: labor-market-mismatch
+experiment_type: labor_market
+
+data:
+  esco_dir: data/esco
+  postings_csv: data/postings/postings.csv
+
+exp_params:
+  model_name: all-MiniLM-L6-v2   # fast; use all-mpnet-base-v2 for better quality
+  batch_size: 256
+  umap_n_neighbors: 15
+  umap_min_dist: 0.1
+  mismatch_threshold: 0.70
+  seed: 42
+
+figures:
+  umap: output/labor_market_umap.png

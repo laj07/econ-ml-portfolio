@@ -1,0 +1,59 @@
+# ── Data (fetch via scripts/) ─────────────────────────────────────────────────
+data/
+*.h5
+*.hdf5
+*.nc
+*.tif
+*.tiff
+*.geotiff
+
+# ── Model checkpoints ─────────────────────────────────────────────────────────
+checkpoints/
+lightning_logs/
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+.python-version
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Secrets ───────────────────────────────────────────────────────────────────
+.env
+*.key
+*.pem
+
+# ── Experiment outputs ────────────────────────────────────────────────────────
+logs/
+*.log
+wandb/
+runs/
+mlruns/
+output/
+results/
+figures/

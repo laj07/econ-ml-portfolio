@@ -1,0 +1,8 @@
+include: config.yaml
+
+name: central-bank-nlp-smoke
+
+exp_params:
+  max_epochs: 1
+  batch_size: 8
+  smoke: true

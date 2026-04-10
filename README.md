@@ -30,15 +30,15 @@
 
 These aren't toy datasets. Each experiment targets a real gap in open-source economic tooling:
 
-**Economic Complexity** — The product space (Hidalgo & Hausmann 2009) is one of the most cited ideas in development economics. The World Bank and IMF use ECI as a growth predictor. Almost no open-source GNN implementations exist on this data.
+**Economic Complexity** : The product space (Hidalgo & Hausmann 2009) is one of the most cited ideas in development economics. The World Bank and IMF use ECI as a growth predictor. Almost no open-source GNN implementations exist on this data.
 
-**Central Bank NLP** — Monetary policy language moves bond markets and FX rates. The standard open-source tool is still a keyword list from 2011. Fine-tuned language models beat it by over 20 F1 points — but no clean multi-bank public implementation existed.
+**Central Bank NLP** : Monetary policy language moves bond markets and FX rates. The standard open-source tool is still a keyword list from 2011. Fine-tuned language models beat it by over 20 F1 points, but no clean multi-bank public implementation existed.
 
-**GDP Nowcasting** — In low-income countries, official GDP is released 6–18 months late. High-frequency signals (nighttime lights, Google Trends, inflation) can fill the gap. This experiment provides a reproducible open baseline the IMF's Statistics Department actively calls for.
+**GDP Nowcasting** : In low-income countries, official GDP is released 6–18 months late. High-frequency signals (nighttime lights, Google Trends, inflation) can fill the gap. This experiment provides a reproducible open baseline the IMF's Statistics Department actively calls for.
 
-**Informal Economy Detection** — The informal sector is 30–60% of GDP in many developing countries yet invisible in national accounts. VIIRS satellite luminosity is a rare external proxy. Positive model residuals serve as a data-driven informality measure.
+**Informal Economy Detection** : The informal sector is 30–60% of GDP in many developing countries yet invisible in national accounts. VIIRS satellite luminosity is a rare external proxy. Positive model residuals serve as a data-driven informality measure.
 
-**Labour Market Mismatch** — Skills mismatch drives structural unemployment but traditional measurement requires expensive surveys. Embedding job postings and skills taxonomies in a shared semantic space makes it quantifiable at scale — directly useful for education policy.
+**Labour Market Mismatch** : Skills mismatch drives structural unemployment but traditional measurement requires expensive surveys. Embedding job postings and skills taxonomies in a shared semantic space makes it quantifiable at scale, directly useful for education policy.
 
 ---
 

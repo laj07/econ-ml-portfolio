@@ -2,13 +2,13 @@
 
 ## Problem statement
 
-The **product space** (Hidalgo & Hausmann 2009) models world trade as a bipartite graph: countries are nodes, products are nodes, and an edge exists when a country exports a product with Revealed Comparative Advantage (RCA) > 1. Countries that are close together in this space — sharing many competitive products — can more easily diversify into each other's exports.
+The **product space** (Hidalgo & Hausmann 2009) models world trade as a bipartite graph: countries are nodes, products are nodes, and an edge exists when a country exports a product with Revealed Comparative Advantage (RCA) > 1. Countries that are close together in this space, sharing many competitive products, can more easily diversify into each other's exports.
 
 The **Economic Complexity Index (ECI)** summarises a country's position in this network. It is used by the World Bank, IMF, and national development banks as a forward-looking proxy for growth potential — countries with high ECI tend to grow faster than their income level would predict.
 
 This experiment trains a **GraphSAGE** model on the OEC product-space graph to:
-1. **Regress ECI** — predict a country's ECI score from its neighbourhood in the trade graph
-2. **Link prediction** — predict which new products a country will start exporting competitively over the next 5 years
+1. **Regress ECI**: predict a country's ECI score from its neighbourhood in the trade graph
+2. **Link prediction**: predict which new products a country will start exporting competitively over the next 5 years
 
 ## Data
 
@@ -59,7 +59,7 @@ OEC trade matrix  →  RCA computation  →  Bipartite graph
 | Link prediction | NDCG@10 | 0.71 |
 | Link prediction | MRR | 0.64 |
 
-The model learns that countries cluster by development stage and export sophistication — consistent with the theoretical product space literature.
+The model learns that countries cluster by development stage and export sophistication, consistent with the theoretical product space literature.
 
 ## Running
 
@@ -73,7 +73,7 @@ python src/main.py --config experiments/economic-complexity/config_smoke.yaml
 
 ## Limitations
 
-- Node features are identity matrices — no external covariates (GDP, population, geography)
+- Node features are identity matrices, no external covariates (GDP, population, geography)
 - Static graph: does not model the temporal evolution of the product space
 - RCA threshold (1.0) is conventional but somewhat arbitrary
 - Small countries with few export products have sparse neighbourhoods → noisier embeddings
